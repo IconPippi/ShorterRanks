@@ -1,5 +1,3 @@
-const entry = require("./entry.js");
-
 TriggerRegister.registerStep(() => {
     if (entry.enabled == "false") return;
 

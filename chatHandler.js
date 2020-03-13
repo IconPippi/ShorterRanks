@@ -1,5 +1,3 @@
-const entry = require("./entry.js");
-
 /* Admin */
 TriggerRegister.registerChat((event) => {
     if (entry.enabled == "false") return;
