@@ -1,0 +1,8 @@
+{
+  "name":"&6ShorterRanks",
+  "description":"Makes every hypixel rank shorter, example: [MVP+] -> [M+]",
+  "version":"2.0",
+  "author":"IconPippi",
+  "entry":"entry.js"
+}
+
