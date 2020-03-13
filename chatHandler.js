@@ -36,7 +36,7 @@ TriggerRegister.registerChat((event) => {
 /* Mvp+ */
 TriggerRegister.registerChat((color, suffix, event) => {
     var msg = ChatLib.getChatMessage(event, true);
-    if (suffix.contains("+")) return;
+    if (suffix.length != 2) return;
     
     ChatLib.chat(msg.replace("&b[MVP" + color + "+" + suffix + "]", "&r&b[M" + color + "+&b]"));
     cancel(event);
