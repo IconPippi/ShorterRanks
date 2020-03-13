@@ -1,7 +1,5 @@
 /* Admin */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&c[ADMIN]", "&c[A]"));
     cancel(event);
@@ -9,8 +7,6 @@ TriggerRegister.registerChat((event) => {
 
 /* Build team */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&3[BUILD TEAM]", "&3[BT]"));
     cancel(event);
@@ -18,8 +14,6 @@ TriggerRegister.registerChat((event) => {
 
 /* Helper */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&9[HELPER]", "&9[H]"));
     cancel(event);
@@ -27,8 +21,6 @@ TriggerRegister.registerChat((event) => {
 
 /* Mod */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&2[MOD]", "&2[M]"));
     cancel(event);
@@ -36,8 +28,6 @@ TriggerRegister.registerChat((event) => {
 
 /* Mvp */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&b[MVP]", "&b[M]"));
     cancel(event);
@@ -45,26 +35,22 @@ TriggerRegister.registerChat((event) => {
 
 /* Mvp+ */
 TriggerRegister.registerChat((color, suffix, event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
+    if (suffix.contains("+")) return;
+    
     ChatLib.chat(msg.replace("&b[MVP" + color + "+" + suffix + "]", "&r&b[M" + color + "+&b]"));
     cancel(event);
 }).setParameter("contains").setChatCriteria("&b[MVP${color}+${suffix}]").setPriority(Priority.LOWEST);
 
 /* Mvp++ */
 TriggerRegister.registerChat((prefix, color, suffix, event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
-    ChatLib.chat(msg.replace("&" + prefix + "[MVP" + color + "++" + suffix + "]", "&r&" + prefix + "[M" + color + "++&" + prefix + "]"));
+    ChatLib.chat(msg.replace("&" + prefix + "[MVP" + color + "++" + suffix + "]", "&r&" + prefix + "[M" + color + "++" + suffix + "]"));
     cancel(event);
 }).setParameter("contains").setChatCriteria("&${pefix}[MVP${color}++${suffix}]").setPriority(Priority.LOWEST);
 
 /* Owner */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&c[OWNER]", "&c[O]"));
     cancel(event);
@@ -72,8 +58,6 @@ TriggerRegister.registerChat((event) => {
 
 /* Vip */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&a[VIP]", "&a[V]"));
     cancel(event);
@@ -81,8 +65,6 @@ TriggerRegister.registerChat((event) => {
 
 /* Vip plus */
 TriggerRegister.registerChat((color, suffix, event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&a[VIP" + color + "+" + suffix + "]", "&r&a[V" + color + "+&a]"));
     cancel(event);
@@ -90,8 +72,6 @@ TriggerRegister.registerChat((color, suffix, event) => {
 
 /* YT */
 TriggerRegister.registerChat((event) => {
-    if (entry.enabled == "false") return;
-
     var msg = ChatLib.getChatMessage(event, true);
     ChatLib.chat(msg.replace("&c[&fYOUTUBE&c]", "&c[&fYT&c]"));
     cancel(event);
