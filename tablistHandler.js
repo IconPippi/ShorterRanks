@@ -1,6 +1,4 @@
 TriggerRegister.registerStep(() => {
-    if (entry.enabled == "false") return;
-
     World.getAllPlayers().forEach((player) => {
         let displayName = player.getDisplayName().getText();
 
@@ -14,7 +12,7 @@ TriggerRegister.registerStep(() => {
         newName = newName.replace(/§c\[ADMIN/i, "§c\[A");
         newName = newName.replace(/§2\[MOD/i, "§2\[M");
         newName = newName.replace(/§c\[OWNER/i, "§c\[O");
-        newName = newName.replace(/§c\[§fYOUTUBE/i, "§c\[YT");
+        newName = newName.replace(/§c\[§fYOUTUBE/i, "§c\[§fYT");
 
         player.setTabDisplayName(new TextComponent(newName));
     });
