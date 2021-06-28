@@ -1,4 +1,4 @@
-# ShorterRanks
+# [ShorterRanks](https://www.chattriggers.com/modules/v/ShorterRanks)
 A ChatTriggers module that makes every hypixel rank shorter.
 
 # Download
