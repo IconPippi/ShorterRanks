@@ -1,2 +1,2 @@
-require("./chatHandler.js");
-require("./tablistHandler.js");
+import "./chatHandler.js";
+import "./tablistHandler.js";

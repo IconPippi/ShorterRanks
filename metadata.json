@@ -1,8 +1,7 @@
 {
   "name":"ShorterRanks",
   "description":"Makes every hypixel rank shorter, example: [MVP+] -> [M+]",
-  "version":"2.0.2",
+  "version":"2.1.0",
   "author":"IconPippi",
   "entry":"entry.js"
 }
-
